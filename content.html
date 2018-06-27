@@ -1,0 +1,175 @@
+<!--
+Name: Matthew Esqueda
+Date: June 25, 2018
+Assignment 1
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>HW Assignment: HTML/CSS</title>
+</head>
+
+<body>
+
+<h5 class="tableTop">Current MLB NL West Statistics</h5>
+
+<!--6x6 table including the header row-->
+<table>
+    <thead>
+        <tr>
+            <th></th>
+            <th>Wins</th>
+            <th>Losses</th>
+            <th>Percentage</th>
+            <th>Current Standing</th>
+            <th>Games Back</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><em>Los Angeles Dodgers</em></td>
+            <td>40</td>
+            <td>35</td>
+            <td>.533</td>
+            <td>2nd Place</td>
+            <td>2.5</td>
+        </tr>
+        <tr>
+            <td><em>San Francisco Giants</em></td>
+            <td>39</td>
+            <td>39</td>
+            <td>.500</td>
+            <td>3rd Place</td>
+            <td>5.0</td>
+        </tr>
+        <tr>
+            <td><em>San Diego Padres</em></td>
+            <td>35</td>
+            <td>44</td>
+            <td>.443</td>
+            <td>5th Place</td>
+            <td>9.5</td>
+        </tr>
+        <tr>
+            <td><em>Colorado Rockies</em></td>
+            <td>38</td>
+            <td>39</td>
+            <td>.494</td>
+            <td>4th Place</td>
+            <td>5.5</td>
+        </tr>
+        <tr>
+            <td><em>Arizona Diamondbacks</em></td>
+            <td>43</td>
+            <td>33</td>
+            <td>.566</td>
+            <td>1st Place</td>
+            <td>-</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">Footer 1</td>
+            <td colspan="4">Footer 2</td>
+        </tr>
+    </tfoot>
+</table>
+
+<!--Ordered list of 3 items-->
+<p>Current Standings</p>
+<ol>
+    <li>Arizona Diamondbacks</li>
+    <li>Los Angeles Dodgers</li>
+    <li>San Francisco Giants</li>
+</ol>
+
+<!--Div with some content-->
+<div class="outer-content">
+    <div class="inner-content">
+        <p>The LA Dodgers will win the World Series.</p>
+    </div>
+</div>
+
+<!--Get form-->
+<form class="getForm" method="get" action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php">
+    <p class="getFormTitles">Some GET Data</p>
+
+    <div class="getDivs">
+       <label for="textInput">Text here:</label>
+       <input id="textInput" type="text" name="text_input">
+   </div>
+
+    <div class="getDivs">
+        <label for="numericalInput">Number here:</label>
+        <input id="numericalInput" type="number" name="numerical_input">
+    </div>
+    
+    <div class="getDivs">
+        <label for="passwordInput">Password here:</label>
+        <input id="passwordInput" type="password" name="password_input">
+    </div>
+    
+    <div class="getDivs">
+        <div class="candies">
+            <input id="snickers" type="radio" name="candy" value="snickers">
+            <label for="snickers">Snickers</label>
+        </div>
+
+        <div class="candies">
+            <input id="skittles" type="radio" name="candy" value="skittles">
+            <label for="skittles">Skittles</label>
+        </div>
+
+        <div class="candies">
+            <input id="mentos" type="radio" name="candy" value="mentos">
+            <label for="mentos">Mentos</label>
+        </div>
+
+        <input type="submit">
+    </div>
+</form>
+
+<!--Post form-->
+<form class="postForm" method="post" action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php">
+    <p class="postFormTitles">Some POST Data</p>
+
+    <div class="postDivs">
+        <label for="textInputPost">Text here:</label>
+        <input id="textInputPost" type="text" name="text_input">
+    </div>
+
+    <div class="postDivs">
+        <label for="numericalInputPost">Number here:</label>
+        <input id="numericalInputPost" type="number" name="numerical_input">
+    </div>
+
+    <div class="postDivs">
+        <label for="passwordInputPost">Password here:</label>
+        <input id="passwordInputPost" type="password" name="password_input">
+    </div>
+
+    <div class="postDivs">
+        <div class="candies">
+            <input id="snickersPost" type="radio" name="candy" value="snickers">
+            <label for="snickersPost">Snickers</label>
+        </div>
+
+        <div class="candies">
+            <input id="skittlesPost" type="radio" name="candy" value="skittles">
+            <label for="skittlesPost">Skittles</label>
+        </div>
+
+        <div class="candies">
+            <input id="mentosPost" type="radio" name="candy" value="mentos">
+            <label for="mentosPost">Mentos</label>
+        </div>
+
+        <input type="submit">
+    </div>
+</form>
+
+</body>
+</html>
